@@ -2,6 +2,8 @@
     padding:0;
     margin:0;
     outline:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 ol,ul{
     list-style: none;
@@ -11,10 +13,12 @@ a{
     text-decoration: none;
 }
 body{
-    /*       font-family: 'Open Sans', sans-serif;
-font-family: 'Oswald', sans-serif;         */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;*/
 /* header part css start */
 .welcome p{
     color: white;
@@ -51,6 +55,8 @@ header{
 /* banner part css start */
 #banner{
     background: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-color: #afafaf4f;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +111,11 @@ header{
 }
 /* banner part css end  */
 /* about part css start */
+#about{
+
+}
 .common_heading{
+color: #0872b9;
 text-align: center;
 margin: 60px 0 40px;
 font-weight: 500;
@@ -191,7 +201,8 @@ position: relative;
 
 } 
 .service_contain{
-    background-color: #f1f1f1;
+    background-color: #dfdddd;
+    height: 250px;
     text-align: center;
     padding: 50px 45px 3px;
     transition: all linear .3s;
@@ -215,10 +226,11 @@ position: relative;
 .service_main{
     position: relative;
     margin-top: 30px;
+    height: 250px;
 }
 .service_main:hover .ser_icon,
 .service_main:hover .ser_icon_main{
-    background-color: #5bc5f4;
+    background-color: #5bc6f4;
     transition: all linear .3s;
 }
 .service_main:hover .service_contain{
@@ -230,6 +242,14 @@ position: relative;
 
 /* service part css end */
 /* protfolio part css start  */
+#portfolio {
+    background-color: #cfa51b65;
+    padding-bottom: 70px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
 .small_img{
     position: relative;
     margin-bottom: 20px;
@@ -252,7 +272,7 @@ position: relative;
     width: 40px ;
     line-height: 40px ;
     text-align: center ;
-    background-color: #5bc5f4;
+    background-color: #5bc6f428;
     color: white;
     border-radius: 50%;
 
@@ -329,13 +349,14 @@ position: relative;
 }
 /* team part css end  */
 /* testimonial part css start  */
-.piramid{
-    height:40px;
-    width:40px;
-    background-color: #f1f1f1;
+
+.piramid {
+    height: 70px;
+    width: 70px;
+    background-color: rgba(8, 114, 185, 0.452);;
     position: absolute;
-    top: -20%;
-    left: 47%;
+    top: -17%;
+    left: 45%;
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -343,15 +364,18 @@ position: relative;
     text-align: center;
     margin-bottom: 50px;
 }
-.testimonial_content{
+.testimonial_content {
+    height: 200px;
     text-align: center;
-    background-color:#f1f1f1;
+    background-color: rgb(93, 171, 223);
+    border-radius: 5px;
     position: relative;
 }
 .testimonial_content ul li{
     display: inline-flex;
 }
 .testimonial_content h4{
+    color: rgb(5, 63, 25);
     font-size: 16px;
     font-weight: 500;
     font-family:'oswald',sans-serif;
@@ -362,10 +386,10 @@ position: relative;
 }
 .testimonial_content p,
 .testimonial_content h6 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'oswald',sans-serif;
-    color: #555555;
+    color: #fff2f2;
 
 }
 /* testimonial part css end  */
@@ -375,6 +399,8 @@ footer{
     margin-top: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
 }
 .f_content {
     margin-top: 20px;
