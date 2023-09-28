@@ -15,7 +15,6 @@ a{
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
-
 }
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;*/
@@ -111,9 +110,6 @@ header{
 }
 /* banner part css end  */
 /* about part css start */
-#about{
-
-}
 .common_heading{
 color: #0872b9;
 text-align: center;
